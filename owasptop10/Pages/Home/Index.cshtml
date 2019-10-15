@@ -1,0 +1,21 @@
+﻿@page
+@model owasptop10.Pages.Home.IndexModel
+
+<h2>@ViewBag.Title</h2>
+
+<div class="jumbotron">
+    <h1>Welcome</h1>
+    <p class="lead">Login from "@User.Identity.Name" Account.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <form method="post" role="form" class="form-horizontal">
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <button asp-page-handler="LogOff" class="btn btn-default">Log Off</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
